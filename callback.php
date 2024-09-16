@@ -24,9 +24,7 @@ if ($callbackData && isset($callbackData['Body']['stkCallback']['ResultCode'])) 
         $transactionDate = $callbackData['Body']['stkCallback']['CallbackMetadata']['Item'][3]['Value'];
         $phoneNumber = $callbackData['Body']['stkCallback']['CallbackMetadata']['Item'][4]['Value'];
 
-        // Insert the payment details into your database
-        // (Assume you have a database connection already set up)
-        // Example of inserting into a payments table:
+        // Insertion to your database
         $conn = new mysqli('localhost', 'root', '', 'mpesa_db');
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -38,11 +36,9 @@ if ($callbackData && isset($callbackData['Body']['stkCallback']['ResultCode'])) 
         $stmt->close();
         $conn->close();
 
-        // You can also send a response back to Safaricom confirming receipt of the callback
         echo json_encode(['ResultCode' => 0, 'ResultDesc' => 'Success']);
     } else {
         // Payment failed or was cancelled
-        // Log or handle the failure/cancellation as needed
         echo json_encode(['ResultCode' => 1, 'ResultDesc' => 'Payment Failed or Cancelled']);
     }
 } else {
