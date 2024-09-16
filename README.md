@@ -63,9 +63,9 @@ To test the M-Pesa callback functionality, you can use NGROK to expose your loca
 
    Example:
 
-   ```
+   ``
    CALLBACK_URL=https://your-ngrok-url.ngrok.io/callback.php
-   ```
+   ``
 
 ### Step 5: Run the Application
 
