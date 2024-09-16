@@ -91,6 +91,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
----
-
 Enjoy using this M-Pesa STK Push integration! If you encounter any issues, please reach out via the repository's issue tracker.
