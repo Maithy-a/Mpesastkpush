@@ -1,6 +1,6 @@
 
 # M-Pesa STK Push Integration
-
+Welcome to the M-Pesa STK Push Integration repository! This project demonstrates how to implement the M-Pesa STK (Sim Tool Kit) Push API for initiating payments directly from a user's mobile phone. This integration allows businesses to facilitate secure and convenient payment transactions via M-Pesa, one of the most popular mobile money transfer services.
 This repository contains a PHP implementation of Safaricom's M-Pesa STK Push API, which allows users to make payments via M-Pesa directly from your web application. The repository also integrates the `.env` file to securely manage sensitive information like API keys, making the setup more secure and adaptable.
 
 ## Requirements
